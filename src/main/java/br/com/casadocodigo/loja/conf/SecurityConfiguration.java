@@ -5,7 +5,7 @@
  */
 package br.com.casadocodigo.loja.conf;
 
-import br.com.casadocodigo.loja.daos.UsuarioDao;
+import br.com.casadocodigo.loja.daos.UsuarioDAO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpMethod;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
@@ -25,7 +25,7 @@ import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 
 	@Autowired
-	private UsuarioDao usuarioDao;
+	private UsuarioDAO usuarioDao;
 
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
@@ -36,9 +36,10 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 				.antMatchers(HttpMethod.POST, "/produtos").hasRole("ADMIN")
 				.antMatchers(HttpMethod.GET, "/produtos").hasRole("ADMIN")
 				.antMatchers("/produtos/**").permitAll()
-				.antMatchers("/urlMaluca").permitAll()
 				//.antMatchers("/resources/**").permitAll()
-				.antMatchers("/").permitAll().anyRequest().authenticated().and().formLogin().loginPage("/login")
+				.antMatchers("/").permitAll()
+				.antMatchers("/url-magica-maluca-oajksfbvad6584i57j54f9684nvi658efnoewfmnvowefnoeijn").permitAll()
+				.anyRequest().authenticated().and().formLogin().loginPage("/login")
 				.permitAll().and().logout().logoutRequestMatcher(new AntPathRequestMatcher("/logout"));
 	}
 	

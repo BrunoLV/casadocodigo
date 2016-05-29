@@ -28,29 +28,40 @@ public class Usuario implements UserDetails {
 	private static final long serialVersionUID = -4848825483001458108L;
 	
 	@Id
-	private String login;
-	private String password;
-	private String name;
+	private String usuario;
+	private String senha;
+	private String nome;
 
 	@ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.PERSIST)
 	private List<Role> roles = new ArrayList<>();
-
-	public String getLogin() {
-		return login;
+	
+	public Usuario() {
 	}
 
-	public void setLogin(String login) {
-		this.login = login;
+	public String getUsuario() {
+		return usuario;
 	}
 
-	public String getName() {
-		return name;
+	public void setUsuario(String usuario) {
+		this.usuario = usuario;
 	}
 
-	public void setName(String name) {
-		this.name = name;
+	public String getSenha() {
+		return senha;
 	}
 
+	public void setSenha(String senha) {
+		this.senha = senha;
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+	
 	public List<Role> getRoles() {
 		return roles;
 	}
@@ -66,16 +77,12 @@ public class Usuario implements UserDetails {
 
 	@Override
 	public String getPassword() {
-		return this.password;
-	}
-	
-	public void setPassword(String password) {
-		this.password = password;
+		return this.senha;
 	}
 
 	@Override
 	public String getUsername() {
-		return this.login;
+		return this.usuario;
 	}
 
 	@Override

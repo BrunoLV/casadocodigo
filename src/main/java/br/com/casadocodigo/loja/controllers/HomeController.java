@@ -1,7 +1,7 @@
 package br.com.casadocodigo.loja.controllers;
 
 import br.com.casadocodigo.loja.daos.ProdutoDAO;
-import br.com.casadocodigo.loja.daos.UsuarioDao;
+import br.com.casadocodigo.loja.daos.UsuarioDAO;
 import br.com.casadocodigo.loja.models.Produto;
 import br.com.casadocodigo.loja.models.Role;
 import br.com.casadocodigo.loja.models.Usuario;
@@ -11,6 +11,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Controller;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
@@ -22,7 +23,7 @@ public class HomeController {
 	private ProdutoDAO produtoDao;
 	
 	@Autowired
-	private UsuarioDao usuarioDao;
+	private UsuarioDAO usuarioDao;
 
 	@RequestMapping("/")
 	@Cacheable(value = "produtosHome")
@@ -33,14 +34,15 @@ public class HomeController {
 		return model;
 	}
 	
-	@RequestMapping("/urlMaluca")
+	@RequestMapping("/url-magica-maluca-oajksfbvad6584i57j54f9684nvi658efnoewfmnvowefnoeijn")
 	@ResponseBody
+	@Transactional
 	public String urlMaluca() {
 		
 		Usuario usuario = new Usuario();
-		usuario.setName("admin");
-		usuario.setLogin("admin@casadocodigo.com.br");
-		usuario.setPassword("$2a$10$lF/cYjbSZpydmXuoZCgaDuB59xTdH/2hADddVen1b1I2bDEb/4LQO");
+		usuario.setNome("admin");
+		usuario.setUsuario("admin@casadocodigo.com.br");
+		usuario.setSenha("$2a$10$lF/cYjbSZpydmXuoZCgaDuB59xTdH/2hADddVen1b1I2bDEb/4LQO");
 		usuario.setRoles(Arrays.asList(new Role("ROLE_ADMIN")));
 		
 		usuarioDao.gravar(usuario);

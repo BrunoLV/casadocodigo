@@ -12,6 +12,7 @@ br/com/casadocodigo/loja/controllers/ExceptionHandlerController.class
 br/com/casadocodigo/loja/controllers/ProdutosController.class
 br/com/casadocodigo/loja/models/TipoPreco.class
 br/com/casadocodigo/loja/validation/ProdutionValidation.class
+br/com/casadocodigo/loja/daos/UsuarioDAO.class
 br/com/casadocodigo/loja/builders/ProdutoBuilder.class
 br/com/casadocodigo/loja/conf/ServletSpringMvc.class
 br/com/casadocodigo/loja/controllers/PagamentoController.class
@@ -21,6 +22,5 @@ br/com/casadocodigo/loja/conf/JPAProductionConfiguration.class
 br/com/casadocodigo/loja/models/Role.class
 br/com/casadocodigo/loja/controllers/LoginController.class
 br/com/casadocodigo/loja/conf/SpringSecurityFilterConfiguration.class
-br/com/casadocodigo/loja/daos/UsuarioDao.class
 br/com/casadocodigo/loja/infra/FileSaver.class
 br/com/casadocodigo/loja/models/Preco.class

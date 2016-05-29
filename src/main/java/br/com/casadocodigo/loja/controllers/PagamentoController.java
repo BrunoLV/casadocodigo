@@ -55,7 +55,7 @@ public class PagamentoController {
 	private void sendEmailFinalizacaoCompra(Usuario usuario) {
 		SimpleMailMessage email = new SimpleMailMessage();
 		email.setFrom("compra@casadocodigo.com.br");
-		email.setTo(usuario.getLogin());
+		email.setTo(usuario.getUsuario());
 		email.setSubject("Nova compra");
 		email.setText("Testando aplicação");
 		mailer.send(email);

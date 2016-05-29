@@ -2,7 +2,6 @@
 /home/bruno/Desenvolvimento/workspace/casadocodigo/src/main/java/br/com/casadocodigo/loja/models/Produto.java
 /home/bruno/Desenvolvimento/workspace/casadocodigo/src/main/java/br/com/casadocodigo/loja/models/Preco.java
 /home/bruno/Desenvolvimento/workspace/casadocodigo/src/main/java/br/com/casadocodigo/loja/controllers/LoginController.java
-/home/bruno/Desenvolvimento/workspace/casadocodigo/src/main/java/br/com/casadocodigo/loja/daos/UsuarioDao.java
 /home/bruno/Desenvolvimento/workspace/casadocodigo/src/main/java/br/com/casadocodigo/loja/conf/SpringSecurityFilterConfiguration.java
 /home/bruno/Desenvolvimento/workspace/casadocodigo/src/main/java/br/com/casadocodigo/loja/daos/ProdutoDAO.java
 /home/bruno/Desenvolvimento/workspace/casadocodigo/src/main/java/br/com/casadocodigo/loja/models/Role.java
@@ -14,6 +13,7 @@
 /home/bruno/Desenvolvimento/workspace/casadocodigo/src/main/java/br/com/casadocodigo/loja/models/CarrinhoItem.java
 /home/bruno/Desenvolvimento/workspace/casadocodigo/src/main/java/br/com/casadocodigo/loja/conf/ServletSpringMvc.java
 /home/bruno/Desenvolvimento/workspace/casadocodigo/src/main/java/br/com/casadocodigo/loja/models/Usuario.java
+/home/bruno/Desenvolvimento/workspace/casadocodigo/src/main/java/br/com/casadocodigo/loja/daos/UsuarioDAO.java
 /home/bruno/Desenvolvimento/workspace/casadocodigo/src/main/java/br/com/casadocodigo/loja/conf/AppWebConfiguration.java
 /home/bruno/Desenvolvimento/workspace/casadocodigo/src/main/java/br/com/casadocodigo/loja/conf/JPAProductionConfiguration.java
 /home/bruno/Desenvolvimento/workspace/casadocodigo/src/main/java/br/com/casadocodigo/loja/conf/JsonViewResolver.java

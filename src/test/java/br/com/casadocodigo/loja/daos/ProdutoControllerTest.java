@@ -34,7 +34,7 @@ public class ProdutoControllerTest {
 	private ProdutoDAO produtoDAO;
 	
 	@Autowired
-	private UsuarioDao UsuarioDao;
+	private UsuarioDAO UsuarioDao;
 
 	@Autowired
 	private WebApplicationContext wac;
