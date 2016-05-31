@@ -31,12 +31,12 @@ public class JPAProductionConfiguration {
 	public DataSource dataSource() throws URISyntaxException {
 		DriverManagerDataSource dataSource = new DriverManagerDataSource();
 		
-		URI dbUri = new URI(environment.getProperty("DATABASE_URL"));
 		
-		String username = dbUri.getUserInfo().split(":")[0];
-        String password = dbUri.getUserInfo().split(":")[1];
-        String dbUrl = "jdbc:postgresql://" + dbUri.getHost() + ':' + dbUri.getPort() + dbUri.getPath();
+		String dbUrl = System.getenv("JDBC_DATABASE_URL");
+        String username = System.getenv("JDBC_DATABASE_USERNAME");
+        String password = System.getenv("JDBC_DATABASE_PASSWORD");
 		
+        dataSource.setDriverClassName("org.postgresql.Driver");
 		dataSource.setUrl(dbUrl);
 		dataSource.setUsername(username);
 		dataSource.setPassword(password);
