@@ -48,6 +48,7 @@ public class ServletSpringMvc extends AbstractAnnotationConfigDispatcherServletI
 		if (StringUtils.isEmpty(servletContext.getInitParameter("spring.profiles.active"))) {
 			servletContext.setInitParameter("spring.profiles.active", "dev");
 		}
+		System.out.println("PARAMETRO: " + servletContext.getInitParameter("spring.profiles.active"));
 	}
 
 }
