@@ -31,40 +31,31 @@
         <link href="https://plus.googlecom/108540024862647200608"
               rel="publisher"/>
 
-<link rel="icon" href="//cdn.shopify.com/s/files/1/0155/7645/t/177/assets/favicon.ico?15063963123751285545" type="image/ico"/> 
-  <link href="https://plus.googlecom/108540024862647200608" rel="publisher">
-  <link href="http://cdn.shopify.com/s/files/1/0155/7645/t/177/assets/cssbase-min.css?5935512085070205644" rel="stylesheet" type="text/css"  media="all"  />
-  <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet'>
-  <link href="http://cdn.shopify.com/s/files/1/0155/7645/t/177/assets/fonts.css?5935512085070205644" rel="stylesheet" type="text/css"  media="all"  />
-  <link href="http://cdn.shopify.com/s/files/1/0155/7645/t/177/assets/fontello-ie7.css?5935512085070205644" rel="stylesheet" type="text/css"  media="all"  />
-  <link href="http://cdn.shopify.com/s/files/1/0155/7645/t/177/assets/fontello-embedded.css?5935512085070205644" rel="stylesheet" type="text/css"  media="all"  />
-  <link href="http://cdn.shopify.com/s/files/1/0155/7645/t/177/assets/fontello.css?5935512085070205644" rel="stylesheet" type="text/css"  media="all"  />
-  
-  <link href="http://cdn.shopify.com/s/files/1/0155/7645/t/177/assets/book-collection.css?5935512085070205644" rel="stylesheet" type="text/css"  media="all"  />
-  <link href="http://cdn.shopify.com/s/files/1/0155/7645/t/177/assets/style.css?5935512085070205644" rel="stylesheet" type="text/css"  media="all"  />
-  <link href="http://cdn.shopify.com/s/files/1/0155/7645/t/177/assets/layout-colors.css?5935512085070205644" rel="stylesheet" type="text/css"  media="all"  />
-  <link href="http://cdn.shopify.com/s/files/1/0155/7645/t/177/assets/responsivo-style.css?5935512085070205644" rel="stylesheet" type="text/css"  media="all"  />
-
-  <link rel="icon" href="//cdn.shopify.com/s/files/1/0155/7645/t/177/assets/favicon.ico?15063963123751285545" type="image/ico"/> 
-  <link href="https://plus.googlecom/108540024862647200608" rel="publisher">
-
-  <link href="http://cdn.shopify.com/s/files/1/0155/7645/t/177/assets/cssbase-min.css?15063963123751285545" rel="stylesheet" type="text/css"  media="all"  />
-  <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet'>
-  <link href="http://cdn.shopify.com/s/files/1/0155/7645/t/177/assets/fonts.css?15063963123751285545" rel="stylesheet" type="text/css"  media="all"  />
-  <link href="http://cdn.shopify.com/s/files/1/0155/7645/t/177/assets/fontello-ie7.css?15063963123751285545" rel="stylesheet" type="text/css"  media="all"  />
-  <link href="http://cdn.shopify.com/s/files/1/0155/7645/t/177/assets/fontello-embedded.css?15063963123751285545" rel="stylesheet" type="text/css"  media="all"  />
-  <link href="http://cdn.shopify.com/s/files/1/0155/7645/t/177/assets/fontello.css?15063963123751285545" rel="stylesheet" type="text/css"  media="all"  />
-  
-    <link href="http://cdn.shopify.com/s/files/1/0155/7645/t/177/assets/style.css?15063963123751285545" rel="stylesheet" type="text/css"  media="all"  />
-  
-  <link href="http://cdn.shopify.com/s/files/1/0155/7645/t/177/assets/layout-colors.css?15063963123751285545" rel="stylesheet" type="text/css"  media="all"  />
-  <link href="http://cdn.shopify.com/s/files/1/0155/7645/t/177/assets/responsivo-style.css?15063963123751285545" rel="stylesheet" type="text/css"  media="all"  />
-  <link rel="alternate" type="application/json+oembed" href="http://www.casadocodigo.com.br/products/livro-java8.oembed" />
-
-  <link href="//cdn.shopify.com/s/files/1/0155/7645/t/177/assets/guia-do-programador-style.css?15063963123751285545" rel="stylesheet" type="text/css"  media="all"  />
-  <link href="//cdn.shopify.com/s/files/1/0155/7645/t/177/assets/products.css?15063963123751285545" rel="stylesheet" type="text/css"  media="all"  />
-  <script type="text/javascript" src='http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js'></script>
-  <link rel="canonical" href="http://www.casadocodigo.com.br/products/livro-java8" />
+        <link href="${contextPath}resources/css/cssbase-min.css"
+              rel="stylesheet" type="text/css" media="all" />
+        <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700'
+              rel='stylesheet'/>
+        <link href="${contextPath}resources/css/fonts.css"
+              rel="stylesheet" type="text/css" media="all" />
+        <link href="${contextPath}resources/css/fontello-ie7.css"
+              rel="stylesheet" type="text/css" media="all" />
+        <link href="${contextPath}resources/css/fontello-embedded.css"
+              rel="stylesheet" type="text/css" media="all" />
+        <link href="${contextPath}resources/css/fontello.css"
+              rel="stylesheet" type="text/css" media="all" />
+        <link href="${contextPath}resources/css/style.css"
+              rel="stylesheet" type="text/css" media="all" />
+        <link href="${contextPath}resources/css/layout-colors.css"
+              rel="stylesheet" type="text/css" media="all" />
+        <link href="${contextPath}resources/css/responsive-style.css"
+              rel="stylesheet" type="text/css" media="all" />
+        <link href="${contextPath}resources/css/guia-do-programador-style.css" 
+              rel="stylesheet" type="text/css"  media="all"  />
+        <link href="${contextPath}resources/css/produtos.css" 
+              rel="stylesheet" type="text/css"  media="all"  />
+        <link rel="canonical" href="http://www.casadocodigo.com.br/" />	
+        <link href="${contextPath}resources/css/book-collection.css"
+              rel="stylesheet" type="text/css" media="all" />
 
         <title>${titulo}</title>
 
